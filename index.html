@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moi Lab</title>
+<meta name="description" content="Moi Lab: bản tin đời sống ngắn gọn cho người trẻ Việt Nam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="khung"><a class="logo" href="./">MOI LAB<b>.</b></a>
+<nav><a href="privacy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav></div></header>
+<main><div class="khung">
+<span class="nhan hien">Bản tin mỗi ngày</span>
+<h1 class="hien">Một lượt lướt, biết hôm nay có gì.</h1>
+<p class="mo hien">Moi Lab gom những tin chạm tới đời sống người trẻ Việt Nam: tiền bạc, học hành, việc làm, sức khoẻ, công nghệ. Mỗi tối là một bản tin ảnh ngắn, mỗi tin có ghi nguồn báo gốc.</p>
+<div class="luoi">
+  <div class="the hien"><h3>Tin có nguồn</h3><p>Mỗi tin lấy từ báo chí chính thống và ghi rõ tên báo. Không thêm chi tiết ngoài bài gốc.</p></div>
+  <div class="the hien"><h3>Ảnh minh hoạ có giấy phép</h3><p>Ảnh lấy từ kho ảnh miễn phí bản quyền, không dùng ảnh của báo.</p></div>
+  <div class="the rong hien"><h3>Công cụ đăng bài Moi Lab</h3><p>Moi Lab dùng một công cụ nội bộ để đăng bản tin ảnh lên tài khoản TikTok của chính Moi Lab. Công cụ chỉ đăng nhập vào tài khoản của Moi Lab, không thu thập dữ liệu của người xem. Chi tiết ở <a href="privacy.html">Chính sách quyền riêng tư</a> và <a href="terms.html">Điều khoản</a>.</p></div>
+</div>
+<h2 class="hien">About (English)</h2>
+<p class="mo hien">Moi Lab publishes a short daily photo digest of Vietnamese lifestyle news, each item credited to its original news outlet. The Moi Lab posting tool is an internal application used only by the Moi Lab team to publish these digests to Moi Lab's own TikTok account through the TikTok Content Posting API.</p>
+</div></main>
+<footer><div class="khung">© 2026 Moi Lab · <a href="https://www.facebook.com/616102181595777">Fanpage Moi Lab</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div></footer>
+<script>document.documentElement.classList.add("js");
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('ro'); io.unobserve(e.target); } }), { threshold: .1 });
+document.querySelectorAll('.hien').forEach((el, i) => { el.style.transitionDelay = (i % 6) * 80 + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>

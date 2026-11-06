@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách quyền riêng tư · Moi Lab</title>
+<meta name="description" content="Moi Lab: bản tin đời sống ngắn gọn cho người trẻ Việt Nam.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Newsreader:opsz,wght@6..72,500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="khung"><a class="logo" href="./">MOI LAB<b>.</b></a>
+<nav><a href="privacy.html">Quyền riêng tư</a><a href="terms.html">Điều khoản</a></nav></div></header>
+<main><div class="khung">
+<span class="nhan hien">Cập nhật 06/11/2026</span>
+<h1 class="hien">Chính sách quyền riêng tư</h1>
+<p class="mo hien">Áp dụng cho công cụ đăng bài Moi Lab (sau đây gọi là "Công cụ"), ứng dụng nội bộ dùng TikTok Login Kit và Content Posting API.</p>
+<h2 class="hien">Dữ liệu Công cụ truy cập</h2>
+<ul><li>Thông tin hồ sơ cơ bản của tài khoản TikTok Moi Lab khi đăng nhập: mã định danh (open_id), tên hiển thị, ảnh đại diện.</li>
+<li>Thông tin tài khoản dùng để đăng bài: các mức quyền riêng tư được phép, giới hạn đăng bài.</li>
+<li>Mã truy cập (access token) do TikTok cấp sau khi chủ tài khoản đồng ý.</li></ul>
+<h2 class="hien">Cách dùng dữ liệu</h2>
+<p>Dữ liệu chỉ dùng để đăng bản tin ảnh lên chính tài khoản TikTok của Moi Lab và kiểm tra trạng thái bài đăng. Công cụ không đọc tin nhắn, danh sách người theo dõi hay dữ liệu của người dùng TikTok khác.</p>
+<h2 class="hien">Lưu trữ và chia sẻ</h2>
+<p>Mã truy cập được lưu trên máy tính của Moi Lab, không lưu trên máy chủ công khai, không bán và không chia sẻ cho bên thứ ba. Ảnh bản tin được đặt tạm trên trang này để TikTok tải về khi đăng.</p>
+<h2 class="hien">Thu hồi quyền</h2>
+<p>Chủ tài khoản có thể thu hồi quyền của Công cụ bất cứ lúc nào trong TikTok: Cài đặt và quyền riêng tư → Bảo mật → Ứng dụng và dịch vụ. Khi đó mã truy cập hết hiệu lực và Moi Lab xoá bản lưu trên máy.</p>
+<h2 class="hien">Liên hệ</h2>
+<p>Nhắn tin cho <a href="https://www.facebook.com/616102181595777">Fanpage Moi Lab</a>.</p>
+<h2 class="hien">English summary</h2>
+<p class="mo">The Moi Lab posting tool accesses only the basic profile (open_id, display name, avatar) and creator posting info of Moi Lab's own TikTok account, plus the access token TikTok issues after consent. This data is used solely to publish Moi Lab's photo digests to that account and to check post status. Tokens are stored locally on Moi Lab's computer, never sold or shared. Access can be revoked at any time in TikTok settings under Security → Apps and services. Contact: Moi Lab Facebook page linked above.</p>
+</div></main>
+<footer><div class="khung">© 2026 Moi Lab · <a href="https://www.facebook.com/616102181595777">Fanpage Moi Lab</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></div></footer>
+<script>document.documentElement.classList.add("js");
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('ro'); io.unobserve(e.target); } }), { threshold: .1 });
+document.querySelectorAll('.hien').forEach((el, i) => { el.style.transitionDelay = (i % 6) * 80 + 'ms'; io.observe(el); });
+</script>
+</body>
+</html>
